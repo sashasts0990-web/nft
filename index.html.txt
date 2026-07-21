@@ -1,0 +1,50 @@
+index.html
+style.css
+nft.js
+nft1.png
+nft2.png
+nft3.png
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>NFT Viewer</title>
+<link rel="stylesheet" href="style.css">
+<script src="nft.js" defer></script>
+<script src="https://telegram.org/js/telegram-web-app.js"></script>
+</head>
+<body>
+
+<div class="card">
+
+    <img id="nftImage" src="" alt="NFT" class="nft-img">
+
+    <h2 id="nftTitle" class="title"></h2>
+
+    <div class="rarity-box">
+        <span id="nftRarity"></span>
+    </div>
+
+    <p id="nftDesc" class="desc"></p>
+
+    <div class="props">
+        <div><b>Модель:</b> <span id="propModel"></span></div>
+        <div><b>Узор:</b> <span id="propPattern"></span></div>
+        <div><b>Фон:</b> <span id="propBackground"></span></div>
+        <div><b>Количество:</b> <span id="propCount"></span></div>
+    </div>
+
+    <div class="price">
+        <b>Ценность:</b> <span id="nftPrice"></span>
+    </div>
+
+    <button class="ok-btn" onclick="Telegram.WebApp.close()">OK</button>
+
+</div>
+
+<script>
+    Telegram.WebApp.ready();
+</script>
+
+</body>
+</html>
